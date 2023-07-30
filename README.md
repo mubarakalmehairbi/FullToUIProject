@@ -1,4 +1,4 @@
-# ToUIFullTemplate
+# FullToUIProject
 A template for a full app created using ToUI. You can use this template and customize it to create your own app. ToUI is a Python framework for creating user interfaces from HTML code easily. Learn about ToUI [here](https://github.com/mubarakalmehairbi/ToUI).
 
 # How to use this template
