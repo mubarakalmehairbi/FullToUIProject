@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>ToUI Project - Sign in</title>
+</head>
+<body>
+    <section class="section is-medium">
+        <div class="container is-max-desktop box">
+            <h1 class="title">Sign up</h1>
+        <div class="field">
+            <label class="label">Email</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Email" id="email">
+            </div>
+            <p id="email-help"></p>
+          </div>
+        
+          <div class="field">
+            <label class="label">Password</label>
+            <div class="control">
+              <input class="input" type="password" placeholder="Password" id="password">
+            </div>
+            <p id="password-help"></p>
+          </div>
+          
+          <div class="field">
+            <div class="control">
+              <label class="checkbox">
+                <input type="checkbox" id="accept-terms">
+                I agree to the "terms and conditions" (This should be a link).
+              </label>
+            </div>
+            <p id="terms-help"></p>
+          </div>
+
+          <button class="button is-link" id="sign-up">Sign up</button>
+          
+        </div>
+        <progress class="progress is-small is-primary is-hidden" max="100" id="progress-bar">15%</progress>
+        <div class="field container is-max-desktop box is-hidden">
+            <label class="label">We sent you a verification code to your email. Please enter it below.</label>
+            <p class="help">Hint the verification code is 1234 :). Ideally, this should be sent to user's email.</p>
+            <div class="control">
+              <input class="input" type="text" placeholder="Code" id="verification-code">
+            </div>
+            <p class="help"></p>
+            <button class="button is-primary" id="verify">Verify</button>
+          </div>
+        <div id="sign-up-status"></div>
+    </section>
+</body>
+</html>
+  

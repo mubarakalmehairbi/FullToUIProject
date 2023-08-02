@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <title>Dashboard | Your Company Name</title>
+</head>
+
+<body>
+    <div class="section">
+        <div class="columns">
+            <div class="column is-2">
+                <aside class="menu">
+                    <p class="menu-label">
+                        General
+                    </p>
+                    <ul class="menu-list">
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Analytics</a></li>
+                    </ul>
+                    <p class="menu-label">
+                        Administration
+                    </p>
+                    <ul class="menu-list">
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Permissions</a></li>
+                    </ul>
+                </aside>
+            </div>
+
+            <!-- Content -->
+            <div class="column">
+                <div id="profile">
+                    <h1 class="title">Profile</h1>
+                    <p id="email">Email:</p>
+                    <p id="email">@gmail.com</p>
+                </div>
+
+                <div id="analytics" class="is-hidden">
+                    <h1 class="title">Analytics</h1>
+                    <div id="data-figure"></div>
+                    <div id="data-table"></div>
+                </div>
+
+                <div id="settings" class="is-hidden">
+                    <h1 class="title">Settings</h1>
+                    <div class="field">
+                        <label class="label">Change Email</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="Your New Email" id="email">
+                        </div>
+                    </div>
+                    <button class="button is-primary" id="change-email">Change Email</button>
+                </div>
+
+                <div id="permissions" class="is-hidden">
+                    <h1 class="title">Permissions</h1>
+                </div>
+
+            </div>
+        </div>
+</body>
+
+</html>

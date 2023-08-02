@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>ToUI Project - Home</title>
 </head>
+
 <body>
-    <h1>Home page</h1>
+    <section class="section has-text-centered is-medium has-background-primary">
+        <h1 class="title has-text-primary-light">ToUI Project Template</h1>
+        <br>
+        <p class="subtitle has-text-white">This is a template for a ToUI app. Have fun customizing it!</p>
+    </section>
+    <section class="section has-text-centered has-background-light">
+        <h1 class="title has-text-primary">Explore Some ToUI features</h1>
+        <div class="tabs is-toggle is-fullwidth is-large">
+            <ul id="tabs-list">
+                <li class="is-active">
+                    <a onclick="open_tab('dynamic-pages-tab')">Dynamic Pages</a>
+                </li>
+                <li>
+                    <a onclick="open_tab('sign-in-tab')">Sign-in</a>
+                </li>
+                <li>
+                    <a onclick="open_tab('files-tab')">Upload and download</a>
+                </li>
+            </ul>
+        </div>
+        <div class="box tabcontent" id="dynamic-pages-tab">
+            <h2 class="subtitle">Dynamic Pages</h2>
+            <p>Using ToUI you can update web pages / windows using Python functions:</p>
+            <br>
+            <div class="level container">
+                <input class="input" type="text" id="input" placeholder="Type something here" />
+                <button class="button is-primary" onclick="update_text()">Update Text Using Python</button>
+            </div>
+            <br>
+            <p class="subtitle">Typed text:</p>
+            <p id="output"></p>
+            <br>
+            <p id="extra-instructions" class="has-text-grey-dark subtitle"></p>
+        </div>
+        <div class="box is-hidden tabcontent" id="sign-in-tab">
+            <h2 class="subtitle">Sign-in</h2>
+            <p>Using ToUI you can sign-in to your app using Google or Custom Sign in:</p>
+            <br>
+            <a class="button is-primary" href="/sign-in">Go To Sign In Page</a>
+        </div>
+        <div class="box is-hidden tabcontent" id="files-tab">
+            <h2 class="subtitle">Upload and download</h2>
+            <p>Using ToUI you can upload and download files:</p>
+            <br>
+            <input type="file" class="button" id="file">
+            <button class="button is-primary" id="upload">Upload The File</button>
+            <p id="upload-status"></p>
+            <br>
+            <br>
+            <button class="button is-primary" id="download">Download A File</button>
+        </div>
+    </section>
 </body>
+
 </html>
