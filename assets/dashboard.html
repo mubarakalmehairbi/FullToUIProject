@@ -9,58 +9,66 @@
 </head>
 
 <body>
-    <div class="section">
-        <div class="columns">
-            <div class="column is-2">
+    <section class="section has-background-primary-dark is-small">
+        <h1 class="title">Dashboard</h1>
+        <p id="current-display-name-header"></p>
+        <br>
+        <br>
+        <button class="button is-danger" id="sign-out">Sign out</button>
+    </section>
+    <div class="columns is-full mt-0 section is-small">
+            <div class="column is-2 box ml-4">
                 <aside class="menu">
                     <p class="menu-label">
                         General
                     </p>
                     <ul class="menu-list">
-                        <li><a href="#">Profile</a></li>
-                        <li><a href="#">Analytics</a></li>
+                        <li><button onclick="open_section('profile')" class="button is-white">Profile</button></li>
+                        <li><button onclick="open_section('analytics')" class="button is-white">Analytics</button></li>
                     </ul>
                     <p class="menu-label">
                         Administration
                     </p>
                     <ul class="menu-list">
-                        <li><a href="#">Settings</a></li>
-                        <li><a href="#">Permissions</a></li>
+                        <li><button onclick="open_section('settings')" class="button is-white">Settings</button></li>
+                        <li><button onclick="open_section('permissions')" class="button is-white">Permissions</button></li>
                     </ul>
                 </aside>
             </div>
 
             <!-- Content -->
             <div class="column">
-                <div id="profile">
+                <div id="profile" class="dashboard-section">
                     <h1 class="title">Profile</h1>
-                    <p id="email">Email:</p>
+                    <p>Email:</p>
                     <p id="email">@gmail.com</p>
                 </div>
 
-                <div id="analytics" class="is-hidden">
+                <div id="analytics" class="is-hidden dashboard-section">
                     <h1 class="title">Analytics</h1>
-                    <div id="data-figure"></div>
-                    <div id="data-table"></div>
+                    <h2 class="subtitle">Figure</h2>
+                    <div id="data-figure" style="width:100%;"></div>
+                    <h2 class="subtitle">Table</h2>
+                    <div id="data-table" style="width:100%;"></div>
                 </div>
 
-                <div id="settings" class="is-hidden">
+                <div id="settings" class="is-hidden dashboard-section">
                     <h1 class="title">Settings</h1>
                     <div class="field">
-                        <label class="label">Change Email</label>
+                        <label class="label">Change Display Name</label>
+                        <p id="current-display-name-settings">Your current display name: None</p>
                         <div class="control">
-                            <input class="input" type="text" placeholder="Your New Email" id="email">
+                            <input class="input" type="text" placeholder="Your New Display Name" id="display-name">
                         </div>
                     </div>
-                    <button class="button is-primary" id="change-email">Change Email</button>
+                    <button class="button is-primary" id="change-display-name">Change Display Name</button>
                 </div>
 
-                <div id="permissions" class="is-hidden">
+                <div id="permissions" class="is-hidden dashboard-section">
                     <h1 class="title">Permissions</h1>
                 </div>
 
             </div>
-        </div>
 </body>
 
 </html>
