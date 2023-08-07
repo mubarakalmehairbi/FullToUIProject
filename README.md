@@ -26,3 +26,4 @@ The project contains the following:
 - `security.py`: adds some security to the app. This script must be revised before publishing the app.
 - `requirements.txt`: lists the python packages required to run the app.
 - `LICENSE`: the license of the app. You can change it to any license you want.
+- `Procfile`: a file required to deploy the app to Heroku. You can remove it if you want to deploy the app elsewhere.
