@@ -1,2 +1,2 @@
-toui
+toui==3.4.0
 gunicorn
