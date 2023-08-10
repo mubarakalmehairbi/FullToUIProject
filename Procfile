@@ -1,1 +1,1 @@
-web: gunicorn main:flask_app --worker-class eventlet
+web: gunicorn main:flask_app --workers 1 --threads 5
