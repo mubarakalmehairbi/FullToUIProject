@@ -1,1 +1,1 @@
-web: gunicorn main:flask_app --worker_class=eventlet
+web: gunicorn main:flask_app --worker-class eventlet
