@@ -1,2 +1,2 @@
-toui==3.4.1
+toui==3.4.2
 gunicorn[eventlet]
