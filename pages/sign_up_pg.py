@@ -1,6 +1,5 @@
 import os
-from toui import Page, get_global_app, __version__
-from toui._helpers import info
+from toui import Page, get_global_app
 
 app = get_global_app()
 
@@ -82,7 +81,6 @@ def verify():
 
 def sign_in_with_google():
     """This function is called when the user clicks the sign in with google button."""
-    info(f"ToUI version: {__version__}")
     pg = app.get_user_page()
     if GOOGLE_CLIENT_ID is None or GOOGLE_CLIENT_SECRET is None:
         print("You must set the GOOGLE_CLIENT_ID and GOOGLE_CLIENT_SECRET variables to use sign in using google feature.")

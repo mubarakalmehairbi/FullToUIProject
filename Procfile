@@ -1,1 +1,1 @@
-web: gunicorn main:flask_app --workers 1
+web: gunicorn main:flask_app --workers 1 --timeout 6000
